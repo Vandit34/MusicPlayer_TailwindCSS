@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/64d805c103.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 flex items-center justify-center"
+  >
+    <section
+      class="bg-[#212936] w-96 py-8 px-3 rounded-[2.5em] flex flex-col items-center"
+    >
+      <div class="part1">
+        <img
+          class="w-[18rem] h-[18rem] rounded-full pb-3"
+          src="/images/AlanWalkerCover.jpg"
+          alt=""
+        />
+
+        <h1 class="text-[1.8em] text-white text-center">Dreamer</h1>
+        <p class="text-[1.3em] text-[#4D5562] text-center">Alan Walker</p>
+      </div>
+
+      <div class="part2 mt-6">
+        <audio id="song">
+          <source
+            src="./Alan Walker - Dreamer [NCS Release].mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+
+        <input type="range" value="0" id="progress" />
+        <div class="controls flex justify-center">
+          <div>
+            <i
+              class="fa-solid fa-backward-step text-[1.5em] mr-3 cursor-pointer"
+              style="color: #ffffff"
+            ></i>
+          </div>
+          <div>
+            <i
+              onclick="playPause()"
+              id="ctrl"
+              class="fa-solid fa-play text-[1.5em] mr-3 cursor-pointer"
+              style="color: #ffffff"
+            ></i>
+          </div>
+          <div>
+            <i
+              class="fa-solid fa-forward-step text-[1.5em] cursor-pointer"
+              style="color: #ffffff"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./function.js"></script>
+  </body>
+</html>
